@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação</title>
+    <style>
+        body {
+            background-color: #1c273fc2;
+        }
+        div {
+            text-align: center;
+            display: inline;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .title span::after {
+            content: "Desenvolvedor";
+            animation: words 7s infinite;
+        }
+
+        @keyframes words {
+            0%, 33% {
+                content: 'Desenvolverdor';
+                color: #ff0000;
+            }
+
+            34%, 66% {
+                content: 'Estudante de Tecnológia';
+                color: #3cff00;
+            }
+
+            67%, 100% {
+                content: 'Criador de Desing';
+                color: #ffd700;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="title">
+            Eu sou um
+            <span></span>
+        </h1>
+    </div>
+</body>
+</html>
