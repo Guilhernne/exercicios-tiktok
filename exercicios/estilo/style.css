@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(243, 206, 127);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    margin: auto;
+    padding: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 530px;
+    background-color: rgb(235, 234, 234);
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 8px 8px 1px 1px rgba(0, 0, 0, 0.678);
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 20px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.mark {
+    background-color: rgb(245, 200, 55);
+    padding: 9px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+h2 {
+    padding: 5px;
+    font-weight: bolder;
+
+}
+.data{
+    padding: 5px;
+}
+#img {
+    display: inline-block;
+    justify-self: left;
+    align-items: flex-end;
+    border-radius: 50%;
+}
+
+a {
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, 950%);
+}
+
+a:hover {
+    text-decoration: underline;
+}
